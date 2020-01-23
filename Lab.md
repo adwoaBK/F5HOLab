@@ -2,4 +2,4 @@
 Lab
 
 Inline-style: 
-![alt text](../images/SHALab1.png "SHA Lab Banner")
+![alt text]("Images/SHALab1.PNG" "SHA Lab Banner")
