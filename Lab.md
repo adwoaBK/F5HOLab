@@ -17,6 +17,13 @@ Below are the series of steps required.
 
 
 
-### Lab 1: Publish a Kerberos Application with F5 BIG IP APM and Azure AD
+### Lab 2: Publish a Kerberos Application with F5 BIG IP APM and Azure AD
+We will publish a Kerberos Application using the Access Guided Configuration.
 
-Objective : We will publish a Kerberos Application Exte
+##### Step 1: Identify the public IP Address
+##### Step 2: Update the Public DNS for the Application 
+##### Step 3: Ensure the Web Application is using Kerberos
+##### Step 4: Create a F5 Keberos Delegation Account
+##### Step 5: Publish and Configure BIG IP to Authenticate with Azure AD
+##### Step 6: Verify Application Access
+
