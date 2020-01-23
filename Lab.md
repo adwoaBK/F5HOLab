@@ -2,4 +2,4 @@
 Lab
 
 Inline-style: 
-!(/Images/Logo.jpg)
+![Image showing secure hybrid access](/Images/Logo.jpg)
