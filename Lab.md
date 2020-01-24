@@ -45,6 +45,7 @@ Below are the series of steps required.
 **Objective**
 
 We will publish a Kerberos Application using the Access Guided Configuration.
+
  | Step | Description | Time Required [30 Mins] |
  | :----------- | :---------- | :---------- |
 |  **1** | Identify the public IP Address| 10 Mins |
