@@ -8,10 +8,11 @@ We will publish a Header Based Application running Internally on the SHAAPP1 Web
 
 Below are the series of steps required.
 ##### Step 1: Identify the public IP Address
-##### Step 2: Update the Public DNS for the Application 
+##### Step 2: Update the Internal and External DNS for the Application 
 ##### Step 3: Add Application in the Azure AD
 ##### Step 4: Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
-##### Step 5: Verify Application Access
+##### Step 5: Verify Application Access Internally
+##### Step : Verify Application Access Externally
 
 
 
