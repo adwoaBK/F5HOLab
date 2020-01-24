@@ -12,8 +12,7 @@ Below are the series of steps required.
 ##### Step 3: Add Application in the Azure AD
 ##### Step 4: Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
 ##### Step 5: Verify Application Access Internally
-##### Step : Verify Application Access Externally
-
+##### Step 6: Verify Application Access Externally
 
 
 
