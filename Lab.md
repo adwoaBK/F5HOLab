@@ -1,8 +1,6 @@
 
 ![](Images/SHALab1.PNG)
 
-
-
 SOME TEXT of the LAB
 
 | Description | Time Required [120 Mins] |
@@ -11,7 +9,6 @@ SOME TEXT of the LAB
 | Publish a Header Based Application with Azure AD Application Proxy | 30 Mins | 
 | Publish a Keberos Application with F5 BIG-IP APM and Azure AD | 30 Mins | 
 | Publish a Keberos Application with Azure AD Application Proxy | 30 Mins |
-
 
 
 **Pre-requisites**
@@ -23,8 +20,6 @@ Before we get started with the exercises there are few environment pre-requisite
 2. Open Windows PowerShell ISE as Administrator
 3. Open the Browser and type `https://raw.githubusercontent.com/jeevanbisht/Azure-ActiveDirectory-AppProxy-DemoSuite/master/BootStrap.ps1` in url.
 4. Copy the entire script from this URL and paste the contents in previously open powerShell ISE console and execute. This should install the webserver and the sample websites required for the lab.
-
-
 
 
 # **Lab 1: Publish a Header Based Application with F5 BIG IP APM and Azure AD**
@@ -58,3 +53,4 @@ We will publish a Kerberos Application using the Access Guided Configuration.
 |  **4** | Create a F5 Keberos Delegation Account| 10 Mins |
 |  **5** | Publish and Configure BIG IP to Authenticate with Azure AD| 15 Mins |
 |  **6** | Verify Application Access| 10 Mins |
+
