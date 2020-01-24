@@ -37,6 +37,13 @@ Below are the series of steps required.
 |**5** |Verify Application Access Internally | 10 Min |
 | **6**| Verify Application Access Externally | 10 Min |
 
+### Identify the public IP Address
+### Identify the public IP Address
+### Update the Internal and External DNS for the Application
+### Add Application in the Azure AD
+### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
+### Verify Application Access Internally 
+### Verify Application Access Externally 
 
 
 
