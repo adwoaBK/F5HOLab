@@ -1,17 +1,14 @@
 
 ![a](Images/SHALab1.PNG)
 
-### **Lab 1: Publish a Header Based Application with F5 BIG IP APM and Azure AD**
-##### **Objective** : 
-We will publish a Header Based Application running Internally on the SHAAPP1 Web Server. The application can be accessed internally by using http://shaapp1:90/HeaderApp1
 
-Below are the series of steps required.
-##### **Part 1:** Identify the public IP Address
-##### **Part 2:** Update the Internal and External DNS for the Application 
-##### **Part 3:** Add Application in the Azure AD
-##### **Part 4:** Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
-##### **Part 5:** Verify Application Access Internally
-##### **Part 6:** Verify Application Access Externally
+
+SOME TEXT of the LAB
+
+## **Lab 1: Publish a Header  Based Application with F5 BIG IP APM and Azure AD**
+## **Lab 2: Publish a Header Based Application with Azure AD Application Proxy**
+## **Lab 3: Publish a Keberos Application with F5 BIG IP APM and Azure AD**
+## **Lab 4: Publish a Keberos Application with Azure AD Application Proxy**
 
 
 **Pre-requisites**
@@ -28,6 +25,20 @@ c. Copy the entire script from this URL
 https://raw.githubusercontent.com/jeevanbisht/Azure-ActiveDirectory-AppProxy-DemoSuite/master/BootStrap.ps1
 
 
+
+
+
+### **Lab 1: Publish a Header Based Application with F5 BIG IP APM and Azure AD**
+##### **Objective** : 
+We will publish a Header Based Application running Internally on the SHAAPP1 Web Server. The application can be accessed internally by using http://shaapp1:90/HeaderApp1
+
+Below are the series of steps required.
+##### **Part 1:** Identify the public IP Address
+##### **Part 2:** Update the Internal and External DNS for the Application 
+##### **Part 3:** Add Application in the Azure AD
+##### **Part 4:** Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
+##### **Part 5:** Verify Application Access Internally
+##### **Part 6:** Verify Application Access Externally
 
 
 
