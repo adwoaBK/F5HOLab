@@ -31,8 +31,8 @@ We will publish a Header Based Application running Internally on the SHAAPP1 Web
 
 Below are the series of steps required.
 
- | Step | Description | Time Required [30 Mins] |
- | :----------- | :---------- | :---------- |
+| Step | Description | Time Required [30 Mins] |
+| :----------- | :---------- | :---------- |
 | **1** | Identify the public IP Address | 5 Min |
 | **2** | Update the Internal and External DNS for the Application | 10 Min |
 |**3** | Add Application in the Azure AD | 10 Min |
@@ -48,8 +48,9 @@ Below are the series of steps required.
 **Objective**
 
 We will publish a Kerberos Application using the Access Guided Configuration.
- | Step | Description | Time Required [30 Mins] |
- | :----------- | :---------- | :---------- |
+
+| Step | Description | Time Required [30 Mins] |
+| :----------- | :---------- | :---------- |
 |  **1** | Identify the public IP Address | 10 Mins |
 |  **2** | Update the Public DNS for the Application | 20 Mins |
 |  **3** | Ensure the Web Application is using Kerberos | 10 Mins |
