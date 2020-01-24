@@ -1,15 +1,16 @@
 
-![a](Images/SHALab1.PNG)
+![](Images/SHALab1.PNG)
 
 
 
-!IMAGE[SHALab1.PNG](SHALab1.PNG)
+
 SOME TEXT of the LAB
-
-#### **Lab 1: Publish a Header  Based Application with F5 BIG IP APM and Azure AD** 
-#### **Lab 2: Publish a Header Based Application with Azure AD Application Proxy**
-#### **Lab 3: Publish a Keberos Application with F5 BIG IP APM and Azure AD**
-#### **Lab 4: Publish a Keberos Application with Azure AD Application Proxy**
+| Description | Time Required [120 Mins] |
+| :----------- | :---------- |
+| Publish a Header  Based Application with F5 BIG-IP APM and Azure AD | 30 Mins | 
+| Publish a Header Based Application with Azure AD Application Proxy | 30 Mins | 
+| Publish a Keberos Application with F5 BIG-IP APM and Azure AD | 30 Mins | 
+| Publish a Keberos Application with Azure AD Application Proxy | 30 Mins |
 
 
 **Pre-requisites**
