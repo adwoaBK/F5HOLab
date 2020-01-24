@@ -38,6 +38,11 @@ Below are the series of steps required.
 | **6**| Verify Application Access Externally | 10 Min |
 
 ### Identify the public IP Address
+
+The Lab will publish the application externally.
+Open edge browser and type https://www.whatsmyip.com and make a note of public IPV4 Address
+
+
 ### Identify the public IP Address
 ### Update the Internal and External DNS for the Application
 ### Add Application in the Azure AD
