@@ -40,7 +40,7 @@ Below are the series of steps required.
 ### Identify the public IP Address
 
 The Lab will publish the application externally.
-Open edge browser and type https://www.whatsmyip.com and make a note of public IPV4 Address
+Open edge browser and type 'https://www.whatsmyip.com' and make a note of public IPV4 Address
 
 
 ### Identify the public IP Address
