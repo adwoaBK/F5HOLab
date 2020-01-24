@@ -50,9 +50,9 @@ Below are the series of steps required.
 We will publish a Kerberos Application using the Access Guided Configuration.
  | Step | Description | Time Required [30 Mins] |
  | :----------- | :---------- | :---------- |
-|  **1** | Identify the public IP Address| 10 Mins |
+|  **1** | Identify the public IP Address | 10 Mins |
 |  **2** | Update the Public DNS for the Application | 20 Mins |
-|  **3** | Ensure the Web Application is using Kerberos| 10 Mins |
-|  **4** | Create a F5 Keberos Delegation Account| 10 Mins |
-|  **5** | Publish and Configure BIG IP to Authenticate with Azure AD| 15 Mins |
-|  **6** | Verify Application Access| 10 Mins |
+|  **3** | Ensure the Web Application is using Kerberos | 10 Mins |
+|  **4** | Create a F5 Keberos Delegation Account | 10 Mins |
+|  **5** | Publish and Configure BIG IP to Authenticate with Azure AD | 15 Mins |
+|  **6** | Verify Application Access | 10 Mins |
