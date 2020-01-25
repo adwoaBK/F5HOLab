@@ -364,19 +364,19 @@ You will   --add text --
 
 ### Verify Application Access Internally 
 1. Goto the **SHADC1** Virtual Machine
-2. Open edge browser **In Private Session** and type `https://testapxx.wingtiptoys.site` 
+2. Open edge browser **In Private Session** and type `https://testappxx.wingtiptoys.site` 
 3. You should see the **Microsoft Login Page**, Login as **user1@wingtiptoys.site** 
 4. You should be able to see the On-premise Web Applicaiton publish via F5 BIG-IP
-5. Browse to `https://testapxx.wingtiptoys.site/happ` this website simple prints the headers. You will see 3 Headers are Injected by the F5 BIG-IP.
+5. Browse to `https://testappxx.wingtiptoys.site/happ` this website simple prints the headers. You will see 3 Headers are Injected by the F5 BIG-IP.
 
 ![](Images/HeaderLab13.png)
 
 ### Verify Application Access Externally 
-1. Launch the **In Private Session** from you base computer and type `https://testapxx.wingtiptoys.site` 
+1. Launch the **In Private Session** from you base computer and type `https://testappxx.wingtiptoys.site` 
 3. You should see the **Microsoft Login Page**, Login as **user1@wingtiptoys.site** 
 4. You should be able to see the On-premise Web Applicaiton publish via F5 BIG-IP
 5. You should also be able to open this from any public PC or Phone.
-6. Browse to `https://testapxx.wingtiptoys.site/happ` this website simple prints the headers. You will see 3 Headers are Injected by the F5 BIG-IP.
+6. Browse to `https://testappxx.wingtiptoys.site/happ` this website simple prints the headers. You will see 3 Headers are Injected by the F5 BIG-IP.
 
 ![](Images/HeaderLab13.png)
 
@@ -533,3 +533,47 @@ In this step we will be using the previous app Integrated with Azure AD but chan
 6. Click on Summary and click **Deploy**
 
 ![](Images/KerbApp5.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Verify Application Access Internally 
+1. Goto the **SHADC1** Virtual Machine
+2. Open edge browser **In Private Session** and type `https://testappxx.wingtiptoys.site/wiasample` 
+3. You should see the **Microsoft Login Page**, Login as **user1@wingtiptoys.site** 
+4. You should be able to see the On-premise Web Applicaiton publish via F5 BIG-IP using the KCD 
+
+![](Images/KerbApp6.png)
+
+
+
+
+
+
+
+
+
+
+
+
