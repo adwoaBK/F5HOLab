@@ -207,7 +207,8 @@ You will   --add text --
   * Specify the **Federation Metadata XML** downloaded and saved to Desktop earlier during Azure AD configuration
   * Specify a Name ex. **AzureSSOSAMLIDP**
   * Click **Save and Next**
-  ![](Images/HeaderLab7.png)
+
+![](Images/HeaderLab7.png)
 
 
 
