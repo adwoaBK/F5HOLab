@@ -45,7 +45,7 @@ We will publish the application externally we need to setup a public hostname na
 3. Open Windows Powershell and open `c:\scripts\UpdatePublicDNS.ps1` update the $Name and $PublicIP
 4. Verify the name was updated using NSLOOKUP from your Base Machine
 
-**Result:** You should have a Public DNS Name  testappXX.wingtiptoys.site resolving to you public IP Address
+**Result:** You should have a Public DNS Name  `testappXX.wingtiptoys.site`  resolving to you public IP Address
 
 
 ### 2. Update the Internal  DNS for the Application
