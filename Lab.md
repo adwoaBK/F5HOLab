@@ -72,6 +72,11 @@ You will   --add text --
 
 ![](Images/HeaderLab2.png)
 
+6. Update the **Entity ID** and **Reply URL** as `https://testappxx.wingtiptoys.site/` and down the Federation Metadata
+
+![](Images/HeaderLab3.png)
+
+
 
 
 
