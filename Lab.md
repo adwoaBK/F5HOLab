@@ -37,6 +37,7 @@ Below are the series of steps required.
 |**5** |Verify Application Access Internally | 10 Min |
 | **6**| Verify Application Access Externally | 10 Min |
 
+
 ### 1. Identify the public IP Address and update public DNS
 
 We will publish the application externally we need to setup a public hostname name ex `testappxx.wingtiptoys.site` 
@@ -56,8 +57,19 @@ The Internal request will be routed to F5 BIG-IP in the Virtual IP `192.168.10.1
 
 **Result:** You should have a Internal DNS Name  `testappXX.wingtiptoys.site` resolving to `192.168.10.150`
 
-
 ### Add Application in the Azure AD
+
+You will   --add text --
+
+1. Goto `https://portal.azure.com` and login as `AppAdmin@wingtiptoys.site` , Password `TRPassword#2020`.
+2. Goto the `Azure Active Directory` Blade and Click `Enterprise Applications`
+3. Click `+ New Application `
+4. Search F5 in `Add from the Gallery` , type `HeaderAppTestXX` in Name and Click `add`
+
+![](Images/HeaderLab1.PNG)
+
+
+
 ### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
 ### Verify Application Access Internally 
 ### Verify Application Access Externally 
