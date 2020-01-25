@@ -136,10 +136,49 @@ You will   --add text --
 
 
 
-2. 
-![](Images/HeaderLab6.png)
 
-3. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. **Virtual Server Configuration**
+* Specify the following Configuration
+
+  * **Destination Address :** 192.168.10.150 , This will be the Virtual Server for our Application
+  * **Service Port :** 443 / HTTPS  : Externally exposed as HTTPS
+  * **Redirect Port :** 80 / HTTP   : Internally running as HTTP
+  * **Create new** Client SSL Profile
+  * select **StarWingTipToys** under **Client SSL Certificate** and **Associated Private Key**. The WildCard Certificate and Key is already uploaded in the F5 BIG-IP Appliance
+
+ ![](Images/HeaderLab6.png)
+
+
+3. Test
  ![](Images/HeaderLab7.png)
 
 4. 
