@@ -37,7 +37,7 @@ Below are the series of steps required.
 |**5** |Verify Application Access Internally | 10 Min |
 | **6**| Verify Application Access Externally | 10 Min |
 
-### Identify the public IP Address and update public DNS
+### 1. Identify the public IP Address and update public DNS
 
 We will publish the application externally we need to setup a public hostname name ex `testappxx.wingtiptoys.site` 
 1. Goto the **SHADC1** Virtual Machine
@@ -48,7 +48,7 @@ We will publish the application externally we need to setup a public hostname na
 **Result:** You should have a Public DNS Name  testappXX.wingtiptoys.site resolving to you public IP Address
 
 
-### Update the Internal  DNS for the Application
+### 2. Update the Internal  DNS for the Application
 The Internal request will be routed to F5 BIG-IP in the Virtual IP `192.168.10.150`.
 1. Goto the **SHADC1** Virtual Machine
 2. Open the **DNS Manager** from the Server Manager 
