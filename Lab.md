@@ -93,10 +93,32 @@ You will   --add text --
 
 
 
-
 ### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
 
-Add Text for Overall
+1. Click **Main >> Access >> Guided Configuration >> Fedeartion >> SAML Service Provider**
+
+![](Images/HeaderLab4.png)
+
+2. 
+![](Images/HeaderLab5.png)
+
+3. 
+![](Images/HeaderLab6.png)
+
+4. 
+ ![](Images/HeaderLab7.png)
+
+5. 
+ ![](Images/HeaderLab8.png)
+
+6. 
+![](Images/HeaderLab9.png)
+
+7. 
+![](Images/HeaderLab10.png)
+
+8. 
+![](Images/HeaderLab11.png)
 
 
 
