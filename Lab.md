@@ -62,7 +62,7 @@ We will publish the application externally we need to setup a public hostname na
 ### 2. Update the Internal  DNS for the Application
 The Internal request will be routed to F5 BIG-IP in the Virtual IP `192.168.10.150`.
 1. Goto the **SHADC1** Virtual Machine
-2. Open the **DNS Manager** from the Server Manager 
+2. Open the **DNS** from the **Server Manager**
 3. Create A/HOST  Record for `testappXX` pointing to `192.168.10.150`
 
 **Result:** You should have a Internal DNS Name  `testappXX.wingtiptoys.site` resolving to `192.168.10.150`
@@ -93,34 +93,56 @@ You will   --add text --
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
 
 1. Click **Main >> Access >> Guided Configuration >> Fedeartion >> SAML Service Provider**
 
-![](Images/HeaderLab4.png)
+ ![](Images/HeaderLab5.png)
+ 
 
 2. 
-![](Images/HeaderLab5.png)
-
-3. 
 ![](Images/HeaderLab6.png)
 
-4. 
+3. 
  ![](Images/HeaderLab7.png)
 
-5. 
+4. 
  ![](Images/HeaderLab8.png)
 
-6. 
+5. 
 ![](Images/HeaderLab9.png)
 
-7. 
+6. 
 ![](Images/HeaderLab10.png)
 
-8. 
+7. 
 ![](Images/HeaderLab11.png)
 
-9. 
+8. 
 ![](Images/HeaderLab12.png)
 
 
