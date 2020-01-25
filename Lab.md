@@ -66,7 +66,7 @@ You will   --add text --
 3. Click `+ New Application `
 4. Search F5 in `Add from the Gallery` , type `HeaderAppTestXX` in Name and Click `add`
 
-![](Images/HeaderLab1.PNG)
+![](Images/HeaderLab1.png)
 
 
 
