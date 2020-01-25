@@ -269,6 +269,7 @@ You will   --add text --
   * We will add some HTTP Headers for our testing
     * Add Operation **replace** specify **customer** as HeaderName and **Jeevan** as HeaderValue
     * Add Operation **replace** specify **EMPID** as HeaderName and **TEST** as HeaderValue
+    * Note : The values can also be variables representing information comin from Azure AD SAML Claim.
   * Click **Save and Next**
 
 ![](Images/HeaderLab9.png)
