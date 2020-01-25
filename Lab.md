@@ -37,14 +37,26 @@ Below are the series of steps required.
 |**5** |Verify Application Access Internally | 10 Min |
 | **6**| Verify Application Access Externally | 10 Min |
 
-### Identify the public IP Address
+### Identify the public IP Address and update public DNS
 
-The Lab will publish the application externally.
-Open edge browser and type 'https://www.whatsmyip.com' and make a note of public IPV4 Address
+We will publish the application externally we need to setup a public hostname name ex `testappxx.wingtiptoys.site` 
+1. Goto the **SHADC1** Virtual Machine
+2. Open edge browser and type 'https://www.whatsmyip.com' and make a note of public IPV4 Address
+3. Open Windows Powershell and open `c:\scripts\UpdatePublicDNS.ps1` update the $Name and $PublicIP
+4. Verify the name was updated using NSLOOKUP from your Base Machine
+
+**Result:** You should have a Public DNS Name  testappXX.wingtiptoys.site resolving to you public IP Address
 
 
-### Identify the public IP Address
-### Update the Internal and External DNS for the Application
+### Update the Internal  DNS for the Application
+The Internal request will be routed to F5 BIG-IP in the Virtual IP `192.168.10.150`.
+1. Goto the **SHADC1** Virtual Machine
+2. Open the **DNS Manager** from the Server Manager 
+3. Create A/HOST  Record for `testappXX` pointing to `192.168.10.150`
+
+**Result:** You should have a Internal DNS Name  `testappXX.wingtiptoys.site` resolving to `192.168.10.150`
+
+
 ### Add Application in the Azure AD
 ### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
 ### Verify Application Access Internally 
