@@ -87,7 +87,7 @@ You will   --add text --
 
 ![](Images/HeaderLab2.png)
 
-7. Update the **Entity ID** and **Reply URL** as `https://testappxx.wingtiptoys.site/` and download the **Federation Metadata XML**  File
+7. Update the **Entity ID** and **Reply URL** as `https://testappxx.wingtiptoys.site/` and download the **Federation Metadata XML**  File and Save to Desktop (this will be used in the F5 BIG-IP Configuration)
 
 ![](Images/HeaderLab3.png)
 
@@ -124,14 +124,10 @@ You will   --add text --
 * Specify the following
 
   * **Configuration Name :** AzureSSOHeaderApp
-
   * **Entity ID :** https://testappxx.wingtiptoys.site/
-
   * **Scheme :** https
-
   * **Host :** testappxxx.wingtiptoys.site
   * Click **Next**
-
   ![](Images/HeaderLab5.png)
 
 
@@ -169,32 +165,191 @@ You will   --add text --
 2. **Virtual Server Configuration**
 * Specify the following Configuration
 
-  * **Destination Address :** 192.168.10.150 , This will be the Virtual Server for our Application
+  * **Destination Address :** 192.168.10.150 , This will be the Virtual Server IP for our Application, Public IP address forwarding is configured to forward traffic to this IP on the firewall.
   * **Service Port :** 443 / HTTPS  : Externally exposed as HTTPS
   * **Redirect Port :** 80 / HTTP   : Internally running as HTTP
   * **Create new** Client SSL Profile
   * select **StarWingTipToys** under **Client SSL Certificate** and **Associated Private Key**. The WildCard Certificate and Key is already uploaded in the F5 BIG-IP Appliance
+  * Click **Save and Next**
+  ![](Images/HeaderLab6.png)
 
- ![](Images/HeaderLab6.png)
 
 
-3. Test
- ![](Images/HeaderLab7.png)
 
-4. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. **External Identity Provider Connector Settings**
+* Specify the following Configuration
+  * Specify **Metadata** under methods
+  * Specify the **Federation Metadata XML** downloaded and saved to Desktop earlier during Azure AD configuration
+  * Specify a Name ex. **AzureSSOSAMLIDP**
+  * Click **Save and Next**
+  ![](Images/HeaderLab7.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+4. **Pool Properties**
+* Specify the following Configuration
+  * Specify **Create New** under select a Pool
+  * Specify **Round Robin** under Load Balancing Method
+  * Specify **192.168.10.11** under Node Name and **80** under Port. This is will where the application is running.
+  * Click **Save and Next**
  ![](Images/HeaderLab8.png)
 
-5. 
-![](Images/HeaderLab9.png)
 
-6. 
-![](Images/HeaderLab10.png)
 
-7. 
-![](Images/HeaderLab11.png)
 
-8. 
-![](Images/HeaderLab12.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. **Single Sign-On Settings**
+* Specify the following Configuration
+  * Specify **HTTP header-based** under single sign-on Type
+  * We will add some HTTP Headers for our testing
+    * Add Operation **replace** specify **customer** as HeaderName and **Jeevan** as HeaderValue
+    * Add Operation **replace** specify **EMPID** as HeaderName and **TEST** as HeaderValue
+  * Click **Save and Next**
+  ![](Images/HeaderLab9.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6. **Endpoint Checks Properties**
+* No configuration required
+  * Click **Save and Next**
+ ![](Images/HeaderLab10.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. ** Timeout Settings**
+* No configuration required
+  * Click **Save and Next**
+ ![](Images/HeaderLab11.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.**Summary**
+* Specify the following Configuration
+ * Click **Deploy**
+ ![](Images/HeaderLab12.png)
 
 
 
