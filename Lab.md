@@ -269,7 +269,7 @@ You will   --add text --
   * We will add some HTTP Headers for our testing
     * Add Operation **replace** specify **customer** as HeaderName and **Jeevan** as HeaderValue
     * Add Operation **replace** specify **EMPID** as HeaderName and **TEST** as HeaderValue
-    * Note : The values can also be variables representing information comin from Azure AD SAML Claim.
+    * Note : The Header Values can also be variables representing information coming from Azure AD SAML Claim.
   * Click **Save and Next**
 
 ![](Images/HeaderLab9.png)
@@ -383,18 +383,63 @@ You will   --add text --
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # **Lab 3: Publish a Kerberos Application with F5 BIG IP APM and Azure AD**
 
 **Objective**
 
-We will publish a Kerberos Application using the Access Guided Configuration.
+We will publish a Kerberos Application using the Access Guided Configuration. In this Lab we will modify the previously configured HeaderaBased Aunthencation Website to Kerberos Based Authenticaiton.
+
 
  | Step | Description | Time Required [30 Mins] |
  | :----------- | :---------- | :---------- |
-|  **1** | Identify the public IP Address| 10 Mins |
-|  **2** | Update the Public DNS for the Application | 20 Mins |
-|  **3** | Ensure the Web Application is using Kerberos| 10 Mins |
-|  **4** | Create a F5 Keberos Delegation Account| 10 Mins |
-|  **5** | Publish and Configure BIG IP to Authenticate with Azure AD| 15 Mins |
-|  **6** | Verify Application Access| 10 Mins |
+|  **1** | Ensure the Internal Web Application is running | 10 Mins |
+|  **2** | Create a F5 Keberos Delegation Account| 10 Mins |
+|  **3** | Publish and Configure BIG IP to Authenticate with Azure AD| 15 Mins |
+|  **4** | Verify Application Access| 10 Mins |
 
+### Ensure the Internal Web Application is running Windows Integrated Authentication
+1. Goto the **SHADC1** Virtual Machine
+2. Open edge browser and type `https://SHAAPP1/WIASAMPLE` (donot use private/incognito)
+3. You should see a webpage Identifying your account using Windows Integrated Auth.
+![](Images/KerbApp1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Create a F5 Keberos Delegation Account
+1. Goto the **SHADC1** Virtual Machine
+2. We need to create an F5 BIG-IP Delegation Account for KCD ( Kerberos Constrained Delegation) to happen for Single Sign-On.
+3. Open the powershell and run the below command
+ * New-ADUser -Name "APM Delegation Account" -UserPrincipalName host/big-ipuser.wingtiptoys.site@wingtiptoys.site -SamAccountName "big-ipuser" -PasswordNeverExpires $true -Enabled $true -AccountPassword (Read-Host -AsSecureString "TRPassword!1234")
