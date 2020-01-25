@@ -442,7 +442,7 @@ We will publish a Kerberos Application using the Access Guided Configuration. In
 1. Goto the **SHADC1** Virtual Machine
 2. We need to create an F5 BIG-IP Delegation Account for KCD ( Kerberos Constrained Delegation) to happen for Single Sign-On.
 3. Open the Powershell ISE as  Administrator and run the below script
- * `New-ADUser -Name "F5 BIG-IP APM Delegation Account" -UserPrincipalName host/big-ipuser.wingtiptoys.site@wingtiptoys.site -SamAccountName "big-ipuser" -PasswordNeverExpires $true -Enabled $true -AccountPassword (Read-Host -AsSecureString "Password")1
+ * `New-ADUser -Name "F5 BIG-IP APM Delegation Account" -UserPrincipalName host/big-ipuser.wingtiptoys.site@wingtiptoys.site -SamAccountName "big-ipuser" -PasswordNeverExpires $true -Enabled $true -AccountPassword (Read-Host -AsSecureString "Password")
  * When prompted specify the Password as **TRPassword#2020** we have to type the same password later in the F5 BIG-IP SSO Configuration.
  4. Set SPN (on the APM Delegation Account) run the following command 
  * `setspn –A host/big-ipuser.wingtiptoys.site  big-ipuser`
@@ -506,6 +506,18 @@ In this step we will be using the previous app Integrated with Azure AD but chan
 
 ![](Images/KerbApp3.png)
 
+
+
+
+
+
+
+
+
+
+
+
+
 5. Click on **SSO** Settings
 * Select **Kerberos** as Single Sign-on Type
 * Specify `session.saml.last.attr.name.identity` as **Username Source**
@@ -514,9 +526,10 @@ In this step we will be using the previous app Integrated with Azure AD but chan
 * Specify `TRPassword#2020` as  **Account Password**
 * Specify `192.168.10.1` as the **KDC**  // Domain Controller IP Address
 * Specify 'http/ShaApp1' as the **SPN Pattern**
+* Click **Save and Next**
 
 ![](Images/KerbApp4.png)
 
+6. Click on Summary and click **Deploy**
 
-
-
+![](Images/KerbApp5.png)
