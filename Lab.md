@@ -412,7 +412,7 @@ We will publish a Kerberos Application using the Access Guided Configuration. In
 
 ### Ensure the Internal Web Application is running Windows Integrated Authentication
 1. Goto the **SHADC1** Virtual Machine
-2. Open edge browser and type `https://SHAAPP1/WIASAMPLE` (donot use private/incognito)
+2. Open edge browser and type `http://SHAAPP1/WIASAMPLE` (donot use private/incognito)
 3. You should see a webpage Identifying your account using Windows Integrated Auth.
 ![](Images/KerbApp1.png)
 
@@ -441,5 +441,82 @@ We will publish a Kerberos Application using the Access Guided Configuration. In
 ### Create a F5 Keberos Delegation Account
 1. Goto the **SHADC1** Virtual Machine
 2. We need to create an F5 BIG-IP Delegation Account for KCD ( Kerberos Constrained Delegation) to happen for Single Sign-On.
-3. Open the powershell and run the below command
- * New-ADUser -Name "APM Delegation Account" -UserPrincipalName host/big-ipuser.wingtiptoys.site@wingtiptoys.site -SamAccountName "big-ipuser" -PasswordNeverExpires $true -Enabled $true -AccountPassword (Read-Host -AsSecureString "TRPassword!1234")
+3. Open the Powershell ISE as  Administrator and run the below script
+ * `New-ADUser -Name "F5 BIG-IP APM Delegation Account" -UserPrincipalName host/big-ipuser.wingtiptoys.site@wingtiptoys.site -SamAccountName "big-ipuser" -PasswordNeverExpires $true -Enabled $true -AccountPassword (Read-Host -AsSecureString "Password")1
+ * When prompted specify the Password as **TRPassword#2020** we have to type the same password later in the F5 BIG-IP SSO Configuration.
+ 4. Set SPN (on the APM Delegation Account) run the following command 
+ * `setspn –A host/big-ipuser.wingtiptoys.site  big-ipuser`
+ 
+ ### Configure the F5 Delgation Account
+ 1. Open Active Directory Users and Computers
+ * Goto Users OU and Double Click **F5 BIG-IP APM Delegation Account**
+ * Goto the **Delegation** Tab
+ * Click **Trust this user for Delegation to specified serices only**
+ * Choose **User any authentication Protocol**
+ * Click **Add** , Click **Users or Computers** button
+ * Click **Advanced** button and click **Find Now**
+ * Select the account ending in **xxxxxxxx-AppPool**, Click OK
+ * You should see a **HTTP** Service Type record for **SHAAPP1.WINGTIPTOYS>SITE**, esnure you **select** and click **ok**
+
+![](Images/KerbApp2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Configure F5 BIG-IP for Kerberos SSO 
+
+In this step we will be using the previous app Integrated with Azure AD but changing the SSO Methig to be Kerbos
+
+1. On the **SHADC1** open Egde browser and navigate to `https://192.168.10.13/`
+2. Login with username : **admin**  Password : **Hyper#2020**
+3. Click **Main >> Access >> Guided Configuration**
+4. Click on  the Existing Deployment **AzureSSOHeaderApp**
+
+![](Images/KerbApp3.png)
+
+5. Click on **SSO** Settings
+* Select **Kerberos** as Single Sign-on Type
+* Specify `session.saml.last.attr.name.identity` as **Username Source**
+* Specify `wingtiptoys.site` as **Kerberos Realm**
+* Specify `big-ipuser` as **Account Name**
+* Specify `TRPassword#2020` as  **Account Password**
+* Specify `192.168.10.1` as the **KDC**  // Domain Controller IP Address
+* Specify 'http/ShaApp1' as the **SPN Pattern**
+
+![](Images/KerbApp4.png)
+
+
+
+
