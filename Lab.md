@@ -57,7 +57,7 @@ The Internal request will be routed to F5 BIG-IP in the Virtual IP `192.168.10.1
 
 **Result:** You should have a Internal DNS Name  `testappXX.wingtiptoys.site` resolving to `192.168.10.150`
 
-### Add Application in the Azure AD
+### 3. Add Application in the Azure AD
 
 You will   --add text --
 
