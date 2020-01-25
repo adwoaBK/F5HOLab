@@ -120,6 +120,9 @@ You will   --add text --
 8. 
 ![](Images/HeaderLab11.png)
 
+9. 
+![](Images/HeaderLab12.png)
+
 
 
 ### Verify Application Access Internally 
