@@ -128,7 +128,8 @@ You will   --add text --
   * **Scheme :** https
   * **Host :** testappxxx.wingtiptoys.site
   * Click **Next**
-  ![](Images/HeaderLab5.png)
+
+![](Images/HeaderLab5.png)
 
 
 
@@ -171,7 +172,8 @@ You will   --add text --
   * **Create new** Client SSL Profile
   * select **StarWingTipToys** under **Client SSL Certificate** and **Associated Private Key**. The WildCard Certificate and Key is already uploaded in the F5 BIG-IP Appliance
   * Click **Save and Next**
-  ![](Images/HeaderLab6.png)
+
+![](Images/HeaderLab6.png)
 
 
 
@@ -235,7 +237,8 @@ You will   --add text --
   * Specify **Round Robin** under Load Balancing Method
   * Specify **192.168.10.11** under Node Name and **80** under Port. This is will where the application is running.
   * Click **Save and Next**
- ![](Images/HeaderLab8.png)
+
+![](Images/HeaderLab8.png)
 
 
 
@@ -266,7 +269,8 @@ You will   --add text --
     * Add Operation **replace** specify **customer** as HeaderName and **Jeevan** as HeaderValue
     * Add Operation **replace** specify **EMPID** as HeaderName and **TEST** as HeaderValue
   * Click **Save and Next**
-  ![](Images/HeaderLab9.png)
+
+![](Images/HeaderLab9.png)
 
 
 
@@ -295,7 +299,8 @@ You will   --add text --
 6. **Endpoint Checks Properties**
 * No configuration required
   * Click **Save and Next**
- ![](Images/HeaderLab10.png)
+
+![](Images/HeaderLab10.png)
 
 
 
@@ -318,7 +323,8 @@ You will   --add text --
 7. ** Timeout Settings**
 * No configuration required
   * Click **Save and Next**
- ![](Images/HeaderLab11.png)
+
+![](Images/HeaderLab11.png)
 
 
 
@@ -349,7 +355,8 @@ You will   --add text --
 8.**Summary**
 * Specify the following Configuration
  * Click **Deploy**
- ![](Images/HeaderLab12.png)
+
+![](Images/HeaderLab12.png)
 
 
 
