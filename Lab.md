@@ -68,6 +68,11 @@ You will   --add text --
 
 ![](Images/HeaderLab1.png)
 
+5. Configure Single sign-on and Choose SAML
+
+![](Images/HeaderLab2.png)
+
+
 
 
 ### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
