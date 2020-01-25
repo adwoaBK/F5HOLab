@@ -121,8 +121,20 @@ You will   --add text --
 
 1. Click **Main >> Access >> Guided Configuration >> Fedeartion >> SAML Service Provider**
 
- ![](Images/HeaderLab5.png)
- 
+* Specify the following
+
+  * **Configuration Name :** AzureSSOHeaderApp
+
+  * **Entity ID :** https://testappxx.wingtiptoys.site/
+
+  * **Scheme :** https
+
+  * **Host :** testappxxx.wingtiptoys.site
+  * Click **Next**
+
+  ![](Images/HeaderLab5.png)
+
+
 
 2. 
 ![](Images/HeaderLab6.png)
