@@ -11,15 +11,25 @@ SOME TEXT of the LAB
 | Lab4 | Publish a Keberos Application with Azure AD Application Proxy | 30 Mins |
 
 
-**Pre-requisites**
+# Pre-requisites 
+
 Before we get started with the exercises there are few environment pre-requisites that will need to be installed and setup.
 
-### Install the Web Application Samples
+## Install the Web Application Samples
 
 1. Login to **SHAApp1** VM as **wingtiptoys\administrator**
 2. Open Windows PowerShell ISE as Administrator
 3. Open the Browser and type `https://raw.githubusercontent.com/jeevanbisht/Azure-ActiveDirectory-AppProxy-DemoSuite/master/BootStrap.ps1` in url.
 4. Copy the entire script from this URL and paste the contents in previously open powerShell ISE console and execute. This should install the webserver and the sample websites required for the lab.
+
+## Activate BIG-IP License
+
+1. On the **SHADC1** open Egde browser and navigate to `https://192.168.10.13/`
+2. Login with username : **admin**  Password : **Hyper#2020**
+3. Click **Activate** and type the F5 License Key in the **Base Registration Key** and Click **Next** . Wait for BIG-IP to apply configuration change,  Click **continue**,  Click **Next** 
+4. Ensure the **APM Module** is select and click **submit**
+
+![](Images/BIGIPLicenseActivation1.png)
 
 
 # **Lab 1: Publish a Header Based Application with F5 BIG IP APM and Azure AD**
@@ -68,22 +78,28 @@ You will   --add text --
 
 ![](Images/HeaderLab1.png)
 
-5. Configure Single sign-on and Choose SAML
+5. Configure **Users and Groups** and Assign **User1 Dem0**
+
+![](Images/HeaderLab4.png)
+
+
+6. Configure Single sign-on and Choose SAML
 
 ![](Images/HeaderLab2.png)
 
-6. Update the **Entity ID** and **Reply URL** as `https://testappxx.wingtiptoys.site/` and down the Federation Metadata
+7. Update the **Entity ID** and **Reply URL** as `https://testappxx.wingtiptoys.site/` and download the **Federation Metadata XML**  File
 
 ![](Images/HeaderLab3.png)
-
-7. Configure **Users and Groups** and Assign **User1 Dem0**
-
-![](Images/HeaderLab4.png)
 
 
 
 
 ### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
+
+Add Text for Overall
+
+
+
 ### Verify Application Access Internally 
 ### Verify Application Access Externally 
 
