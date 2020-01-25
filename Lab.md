@@ -76,6 +76,9 @@ You will   --add text --
 
 ![](Images/HeaderLab3.png)
 
+7. Configure **Users and Groups** and Assign **User1 Dem0**
+
+![](Images/HeaderLab4.png)
 
 
 
