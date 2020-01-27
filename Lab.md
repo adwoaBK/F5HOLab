@@ -119,6 +119,10 @@ You will   --add text --
 
 ### Publish and Configure BIG IP to Authenticate with Azure AD and Create Headers
 
+* On the **SHADC1** open Egde browser and navigate to `https://192.168.10.13/`
+* Login with username : **admin**  Password : **Hyper#2020**
+
+
 1. Click **Main >> Access >> Guided Configuration >> Fedeartion >> SAML Service Provider**
 
 * Specify the following
