@@ -265,8 +265,6 @@ You will   --add text --
 
 
 
-
-
 5. **Single Sign-On Settings**
 * Specify the following Configuration
   * Specify **HTTP header-based** under single sign-on Type
@@ -324,8 +322,6 @@ You will   --add text --
 
 
 
-
-
 7. ** Timeout Settings**
 * No configuration required
   * Click **Save and Next**
@@ -366,6 +362,27 @@ You will   --add text --
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Verify Application Access Internally 
 1. Goto the **SHADC1** Virtual Machine
 2. Open edge browser **In Private Session** and type `https://testappxx.wingtiptoys.site` 
@@ -375,6 +392,18 @@ You will   --add text --
 
 ![](Images/HeaderLab13.png)
 
+
+
+
+
+
+
+
+
+
+
+
+
 ### Verify Application Access Externally 
 1. Launch the **In Private Session** from you base computer and type `https://testappxx.wingtiptoys.site` 
 3. You should see the **Microsoft Login Page**, Login as **user1@wingtiptoys.site** 
@@ -383,7 +412,6 @@ You will   --add text --
 6. Browse to `https://testappxx.wingtiptoys.site/happ` this website simple prints the headers. You will see 3 Headers are Injected by the F5 BIG-IP.
 
 ![](Images/HeaderLab13.png)
-
 
 
 
@@ -413,6 +441,8 @@ We will publish a Kerberos Application using the Access Guided Configuration. In
 |  **2** | Create a F5 Keberos Delegation Account| 10 Mins |
 |  **3** | Publish and Configure BIG IP to Authenticate with Azure AD| 15 Mins |
 |  **4** | Verify Application Access| 10 Mins |
+
+
 
 ### Ensure the Internal Web Application is running Windows Integrated Authentication
 1. Goto the **SHADC1** Virtual Machine
