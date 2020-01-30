@@ -6,12 +6,10 @@ SOME TEXT of the LAB
 | Title  | Description | Time Required [120 Mins] |
 | :----------| :----------- | :---------- |
 | Lab1 | Publish a Header  Based Application with F5 BIG-IP APM and Azure AD | 30 Mins | 
-| Lab2 | Publish a Header Based Application with Azure AD Application Proxy | 30 Mins | 
-| Lab3 | Publish a Keberos Application with F5 BIG-IP APM and Azure AD | 30 Mins | 
-| Lab4 | Publish a Keberos Application with Azure AD Application Proxy | 30 Mins |
+| Lab2 | Publish a Keberos Application with F5 BIG-IP APM and Azure AD | 30 Mins |
 
 
-# Pre-requisites 
+# Pre-requisites  
 
 Before we get started with the exercises there are few environment pre-requisites that will need to be installed and setup.
 
